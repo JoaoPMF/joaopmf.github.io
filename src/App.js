@@ -62,7 +62,7 @@ export default function SignIn() {
               variant="contained"
               color="primary"
               className={classes.submit}
-              onClick={() => {if(document.getElementById("password").value==="test"){setVerified(1)}}}
+              onClick={() => {if(document.getElementById("password").value.toLowerCase()==="branco"){setVerified(1)}}}
             >
               Verificar
             </Button>
@@ -79,7 +79,7 @@ export default function SignIn() {
             <LockOpenOutlined />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Procurem uma fita vermelha
+            Sigam as fitas coloridas
           </Typography>
         </div>
       </Container>
